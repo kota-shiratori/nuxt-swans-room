@@ -2,18 +2,26 @@
     <header class="header">
         <div class="header__inner">
             <h1 class="header__logo">
-                <a href="" class="header__logo--link"><img class="lazyload" src="~/assets/wsc.png" loading="lazy" alt="Swan's LOGO"></a>
+                <NuxtLink to="/" class="header__logo--link">
+                    <img class="lazyload" src="~/assets/wsc.png" loading="lazy" alt="Swan's LOGO">
+                </NuxtLink>
             </h1>
             <nav class="header__nav">
                 <ul class="header__nav--list">
                     <li class="header__nav--item">
-                        <a href="" class="header__nav--link">Works</a>
+                        <NuxtLink to="/" class="header__nav--link">
+                            Works
+                        </NuxtLink>
                     </li>
                     <li class="header__nav--item">
-                        <a href="" class="header__nav--link">About</a>
+                        <NuxtLink to="/about" class="header__nav--link">
+                            About
+                        </NuxtLink>
                     </li>
                     <li class="header__nav--item">
-                        <a href="" class="header__nav--link">Contact</a>
+                        <NuxtLink to="/contact" class="header__nav--link">
+                            Contact
+                        </NuxtLink>
                     </li>
                 </ul>
             </nav>
