@@ -2,11 +2,14 @@
     <HeaderComponent />
     <div id="wrapper">
         <slot />
+        <FooterComponent />
     </div>
-    <FooterComponent />
 </template>
 
 <style>
+/*----------------------------------------
+	Reset
+----------------------------------------*/
 html,
 body,
 div,
@@ -172,6 +175,10 @@ select {
     vertical-align: middle;
 }
 
+/*----------------------------------------
+	base
+----------------------------------------*/
+
 body {
     font-family: reitam, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     background: whitesmoke;
@@ -223,6 +230,49 @@ img {
 
     ._pc {
         display: block;
+    }
+}
+
+/*----------------------------------------
+	layout
+----------------------------------------*/
+.l-content {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*----------------------------------------
+	section
+----------------------------------------*/
+.section {
+    margin: 120px auto;
+}
+
+.section__ttl {
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+.section__ttl--inner {
+    font-size: 1.875rem;
+    display: inline-block;
+    padding: 0.25em;
+    margin-bottom: -2px;
+    border-bottom: solid 4px gray;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        margin: 180px auto;
+    }
+
+    .section__ttl {
+        margin-bottom: 80px;
+    }
+
+    .section__ttl--inner {
+        font-size: 2.5rem;
     }
 }
 </style>
